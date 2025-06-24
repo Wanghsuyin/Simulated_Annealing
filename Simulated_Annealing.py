@@ -9,6 +9,7 @@ def generate_maze(width, height):
     height = height if height % 2 == 1 else height + 1
     maze = [[1 for _ in range(width)] for _ in range(height)]
 
+
     def carve_passages(x, y):
         directions = [(0, 2), (0, -2), (2, 0), (-2, 0)]
         random.shuffle(directions)
